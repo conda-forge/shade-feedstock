@@ -48,6 +48,7 @@ about:
   license_file: LICENSE
   summary: Client library for OpenStack containing Infra business logic
   dev_url: https://github.com/openstack-infra/shade.git
+  doc_url: https://docs.openstack.org/shade/latest/
 
 extra:
   recipe-maintainers:
