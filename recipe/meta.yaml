@@ -1,6 +1,6 @@
 {% set name = "shade" %}
-{% set version = "1.22.2" %}
-{% set sha256 = "66b1077fd08715f892e1db0ea8d672260634c9ca72440fa184831f7c096e16da" %}
+{% set version = "1.27.0" %}
+{% set sha256 = "11a1602e6f937ff43363fafe2cba7d416a5cecf5f9131e137b1363392e3c3e66" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
   skip: True  # [py3k]
 
