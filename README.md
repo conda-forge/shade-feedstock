@@ -14,14 +14,16 @@ Summary: Client library for OpenStack containing Infra business logic
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/shade-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/shade-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/shade-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/shade-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/shade-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/shade-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/shade-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/shade-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/shade-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/shade-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/shade-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/shade-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/shade/badges/version.svg)](https://anaconda.org/conda-forge/shade)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/shade/badges/downloads.svg)](https://anaconda.org/conda-forge/shade)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-shade-green.svg)](https://anaconda.org/conda-forge/shade) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/shade.svg)](https://anaconda.org/conda-forge/shade) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/shade.svg)](https://anaconda.org/conda-forge/shade) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/shade.svg)](https://anaconda.org/conda-forge/shade) |
 
 Installing shade
 ================
