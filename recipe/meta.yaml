@@ -32,7 +32,7 @@ requirements:
     - os-client-config
     - requestsexceptions
     - dogpile.cache
-    - futures # [py27]
+    - futures  # [py27]
     - simplejson
     - netifaces
     - python-ironicclient
