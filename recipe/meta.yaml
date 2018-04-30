@@ -21,6 +21,7 @@ requirements:
     - python
     - setuptools
     - pbr
+    - pip
 
   run:
     - python
