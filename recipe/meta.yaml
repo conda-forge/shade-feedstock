@@ -1,6 +1,6 @@
 {% set name = "shade" %}
-{% set version = "1.28.0" %}
-{% set sha256 = "d2d5986622b69deaeff6ba2713a022f7193f37140071b5f56e477d68672d1a9c" %}
+{% set version = "1.29.0" %}
+{% set sha256 = "bc427b949c8d8b3b0619bd5c4168b933c065b83a722bdf7d875272a47395f715" %}
 
 package:
   name: {{ name|lower }}
