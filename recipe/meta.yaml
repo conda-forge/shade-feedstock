@@ -12,15 +12,14 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 1001
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
-  build:
+  host:
     - python
-    - setuptools
+    - pip
     - pbr
-
   run:
     - python
     - six
@@ -51,4 +50,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - brainstorm 
+    - brainstorm
