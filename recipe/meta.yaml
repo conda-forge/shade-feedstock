@@ -1,37 +1,38 @@
 {% set name = "shade" %}
 {% set version = "1.33.0" %}
-{% set sha256 = "36f6936da93723f34bf99d00bae24aa4cc36125d597392ead8319720035d21e8" %}
+
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/shade-{{ version }}.tar.gz
+  sha256: 36f6936da93723f34bf99d00bae24aa4cc36125d597392ead8319720035d21e8
 
 build:
-  number: 1
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 2
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
+    - pbr >=2.0.0
     - pip
-    - pbr
+    - python >=3.6
   run:
-    - python
-    - six
+    - python >=3.6
+    - openstacksdk >=0.15.0
+    - os-client-config >=1.28.0
+    - pbr !=2.1.0,>=2.0.0
+    # extras
     - munch
     - decorator
     - jmespath
     - jsonpatch
     - keystoneauth1
-    - os-client-config
     - requestsexceptions
     - dogpile.cache
-    - futures  # [py27]
     - simplejson
     - netifaces
     - python-ironicclient
@@ -39,10 +40,14 @@ requirements:
 test:
   imports:
     - shade
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://docs.openstack.org/developer/shade/
-  license: Apache 2.0
+  license: Apache-2.0
   license_file: LICENSE
   summary: Client library for OpenStack containing Infra business logic
   dev_url: https://github.com/openstack-infra/shade.git
